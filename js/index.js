@@ -1,34 +1,32 @@
 
 
+ let lista = [2,3,4,1]
+let listaPar = []
+let listaImpar = []
+let auxiliar = 0
 
-
-// let listaNumeros = [2,6,5,3,4,1,7];
-// let  listaAxiliar = "";
-
-// for(let i =0; i<listaNumeros.length; i++){
-// 	for(let j = 0; listaAxiliar - i; j++){
-// 		if(i<1 && i<2 && i<3 && i<4 && i<5 && i>6 && i<7 && i<8){
-//       console.log(listaOrdenar[i])
-// 	}if(i<2 && i<3 && i<4 && i<5 && i<6 && i<7 && i<8){
-//         // console.log(listaOrdenar[i])
-// 	}if(i<3 && i<4 && i<5 && i<6 && i<7 && i<8){
-// 		  // console.log(listaOrdenar[i])
-// 	}if(i<4 && i<5 && i<6 && i>7 && i<8){
-// 		// console.log(listaOrdenar[i])
-// 	}if(i<5 && i<6 && i<7 && i<8){
-// 		// console.log(listaOrdenar[i])
-// 	}if(i<6 && i<7 && i<8){
-// 		// console.log(listaOrdenar[i])
-// 	}if(i<7 && i<8){
-// 		listaAxiliar = i
-// 		console.log(listaAxiliar)
+  
+for(let i=0; i<lista.length; i++){
+	let posecion = lista[i];
 	
+	auxiliar += posecion;
 
-// 	}
-// 	}
 	
+	
+console.log(` posecion ${posecion}  suma: ${auxiliar}  `)
+}
+for(const ordenar of lista){
+	if(auxiliar % 2===0){
+		listaPar.push(auxiliar)
+	}else{
+      listaImpar.push(auxiliar)
+	}
+}
 
-// }
+// console.log(listaPar)
+console.log(`lista impar: 
+${listaImpar} lista par: ${listaPar}`)
+
 
 
 
